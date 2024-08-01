@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding:
+    var(--scroll-padding, 5rem);
+}
+
+:root {
+  --primary-color: #f13a11;
+  --white-color: #ffffff;
+  --dark-color: #171819;
+  --about-bg-color: #f9f9f9;
+  --gray-color: #909090;
+  --link-color: #404040;
+  --p-color: #666262;
+
+  --menu-font-size: 15px;
+
+  --border-radius-large: 100%;
+  --border-radius-small: 2px;
+}
+
+/* Nav Content */
+nav {
+  position: absolute;
+  /* Change position to absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  /* Ensure navigation is above other content */
+}
+
+nav .nav-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+
+}
+
+.nav-content .nav-links {
+  display: flex;
+}
+
+.nav-content .nav-links li {
+  list-style: none;
+  margin: 0 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px 4px;
+  transition: all 0.3s ease;
+}
+
+/*--------------------- */
+/* Home section */
+.home {
+  height: 100vh;
+  width: 100%;
+  background: url("images/image5.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  /* Make the container for background-text relative */
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+}
+
+.home h2 {
+  font-size: 80px;
+  color: #f44c40;
+  margin-bottom: 6px;
+}
+
+.home {
+  position: relative;
+}
+
+.home p {
+  font-size: 25px;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.join {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  top: 30%;
+  left: 50%;
+}
+
+.join:hover {
+  background-color: white;
+  color: black;
+}
+
+/*------*/
+/* About Fithub */
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  /* Center vertically */
+}
+
+.image1 {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+
+}
+
+.image1 img {
+  width: 150%;
+  /* Ensure the image covers the container */
+  height: auto;
+}
+
+.container1 .text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.container1 .text h1 {
+  font-size: 60px;
+  color: #e5633b;
+  margin-bottom: 20px;
+}
+
+.container1 .text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .container1 .content1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container1 .image1, .text {
+    min-width: 100%;
+  }
+
+  .container1 .text h1 {
+    font-size: 2em;
+  }
+
+  .container1 .text p {
+    font-size: 1em;
+  }
+}
+
+/*------*/
+/* Latest Buzz */
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.container2 .text, .image {
+  flex: 1;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.content2 h2 {
+  text-align: center;
+  font-size: 60px;
+  color: #e5633b;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.column h3, h4, h5, h6 {
+  font-size: 35px;
+}
+
+.column-info {
+  font-size: 22px;
+}
+
+.column .date {
+  font-size: 22px;
+}
+
+.container2 .text, .image {
+  flex: 1;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content2 .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container2 .column {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 70px;
+}
+
+.responsive1 {
+  width: 600px;
+  height: 400px;
+  float: right;
+  object-fit: contain;
+  height: auto;
+}
+
+.content2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.button {
+  background-color: #f3722c;
+  border-color: #f3722c;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-size: 25px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: #e5633b;
+}
+
+/* */
+.containerss {
+  background-image: url(images/image6.jpg);
+}
+
+.about-us-section .about-pic {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about-us-section .about-pic img {
+  min-width: 100%;
+}
+
+.about-text {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about-text .section-title {
+  margin-bottom: 20px;
+}
+
+.about-text .section-title h2 {
+  font-weight: 600;
+}
+
+.about-text .section-title p {
+  font-size: 20px;
+  color: #191919;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.about-text p {
+  color: #6e6e6e;
+  line-height: 24px;
+}
+
+.set-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* JOIN */
+---------------------------------------------
+/* SCHEDULE */
+
+/* Schedule section */
+p {
+  font-size: 25px;
+}
+
+.section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.row {
+  margin-right: 10px;
+
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+
+.container h6 {
+  font-size: 22px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 36px;
+  color: #343a40;
+}
+
+.custom-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .custom-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-col {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    margin-top: 0;
+  }
+
+  .custom-col.mt-5 {
+    margin-top: 0;
+  }
+}
+
+.schedule.section {
+  background: var(--dark-color);
+  /* Corrected background color */
+  padding: 60px 0;
+}
+
+.schedule-table {
+  display: table;
+  width: 100%;
+  border: 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.schedule-table strong,
+.schedule-table span {
+  display: block;
+  text-align: center;
+}
+
+.schedule-table strong {
+  color: var(--white-color);
+}
+
+.schedule-table span {
+  color: var(--gray-color);
+  font-size: var(--menu-font-size);
+  text-transform: uppercase;
+}
+
+.schedule-table small {
+  position: relative;
+  top: 10px;
+  font-size: var(--menu-font-size);
+  text-transform: uppercase;
+}
+
+.table .thead-light th,
+.schedule-table tr td:first-child {
+  background: var(--primary-color);
+  border: 1px solid #212122;
+  color: var(--white-color);
+}
+
+.schedule-table .thead-light th {
+  border-bottom: 0;
+  text-transform: uppercase;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #212122;
+}
+
+.table-bordered td {
+  padding-bottom: 22px;
+}
+
+.table td,
+.table th {
+  padding: 1rem;
+}
+
+/* */
+/*Footer*/
+.footer-basic {
+  margin-top: 30px;
+  background-color: #ffffff;
+  color: #4b4c4d;
+  background-color: gre;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social>a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social>a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+/*-------------*/
+/* FAQ container styles */
+.faq-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion styles */
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion-button {
+  background-color: #fff;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion-button:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  float: right;
+  margin-top: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow::before {
+  content: "\25B2";
+  font-size: 16px;
+}
+
+.accordion-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  display: none;
+}
+
+.accordion-button.active .arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-button.active+.accordion-content {
+  display: block;
+}
+
+
+
+/* Contact */
+.contact-body {
+  background-color: black;
+  padding-top: 85px;
+
+}
+
+.contact-row h1 {
+  font-family: 'Poppins', sans-serif, 'arial';
+  font-weight: 600;
+  font-size: 72px;
+  color: white;
+  text-align: center;
+}
+
+.contact-row h4 {
+  font-family: 'Roboto', sans-serif, 'arial';
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+
+input:focus~span,
+textarea:focus~span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  padding: 10px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #f3722c;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+input[type='checkbox']+label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type='checkbox']:checked+label {
+  color: #f00;
+  font-style: normal;
+}
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+}
